@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CapstoneFinal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
+    <link rel="home" href="index.html">
+    <link rel="welcome" href="../welcome.html">
+    <link rel="contact" href="../contact.html">
+    <link rel="gallery" href="../gallery.html">
+    <link rel="missions" href="../faithmissions.html">
+    <link rel="missionaries" href="../missionaries.html">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    background: url(images/field.jpeg) no-repeat center center fixed;
+    -webkit-bacdground-size: cover;
+    width: 150%;
+    height: 150%;
+    overflow: scroll;
+}
+
+.parallax {
+    background-image: url(images/field.jpeg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-witdth: 2000px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.container {
+    display: flex;
+    width: cover;
+    height: cover;
+}
+
+.image {
+    margin-left: 40px;
+}
+
+.navbar {
+    display: flex;
+    vertical-align: top;
+    padding-left: 10px;
+    margin-top: -110px;
+    margin-left: 400px;
+    width: 675px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #df8562;
+    font-family: font-family: 'Shadows Into Light', cursive;
+    border-radius: 30px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: 	#FAEBD7;
+    text-align: center;
+    padding: 8px 23px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #FAEBD7;
+    padding: 8px 23px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #6288df;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FAEBD7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #8B4513;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(202, 183, 157);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    display: flex;
+    margin-left: 410px;
+    margin-top: 100px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: #09393A;
+}
+
+h2 {
+    display: flex;
+    margin-left: 550px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 35px;
+    color: #09393A;
+}
+
+h3 {
+    display: flex;
+    margin-left: 100px;
+    font-family: "Lobster Two, cursive";
+    font-size: 30px;
+    color: #09393A;
+
+}
+
+p {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 200px;
+    font-family: "Lobster Two, cursive";
+    font-size: 2em;
+    color: #09393A;
+}
+
+#textbox{
+    float: left;
+    justify-content: space-between;
+    background-color: #F8C471;
+    width: 1200px;
+    height: 200px;
+    border: 15px black; 
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 60px;
+    opacity: 1;
+} 
+
+.align-left {
+    float: left;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+.align-center {
+    float: center;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
+    padding-left: 100px;
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+}
+
+.align-right {
+    margin-left: 800px;
+    margin-top: -145px;
+    padding-right: 30px;
+    list-style-type: none;
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/CBClogo.png" style="width: 15%px top left"> 
+            <aside>
+                <div class="navbar">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="welcome.html">Welcome</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="gallery.html">Gallery</a>
+                            
+                    <div class="dropdown">
+                        <button class="dropbtn">Missions Program
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="faithmissions.html">Faith Missions</a>
+                            <a href="missionaries.html">Missionaries</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="side-note">
+        <h1>What is Faith Promise Missions?</h1>
+        <h2>2 Corinthians 8:3</h2>
+
+            <h3>"They gave of themselves as much as they were able, and even beyond their
+                ability <br> See that you also excel in this grace of giving...Your plenty will 
+                supply what they need." 
+            </h3>
+                <p>Faith Promise Missions is a way of giving to world evangelism.<br>
+                    Rather than waiting to respond to individual appeals as they come along,<br>
+                    believers ask the Lord how much they should give to missions over the <br>
+                    next year. They then committ to that annual total as a "Faith Promise."
+                </p>
+    </div>
+    
+    <div id="textbox">
+        <p class="align-left">Faith Promise giving <br>above and beyond.
+            <br>(II Corinthians 8:2-3<br>II Corinthians 9:6-15)
+        </p>
+        <br>    
+        <br>  
+        <p class="align-center">Faith Promise giving reflects<br>our personal commitments.<br>(II Corinthians 8:5)</p>
+        <br>      
+        <p class="align-right">Though Faith Promise giving<br>is optional, it does clearly<br>demonstrate our love.
+            <br>(Philippians 2:1-4; <br> Luke 6:38, Romans 12:9-10)
+        </p>
+        <br>
+        <br>
+        </div> 
+    </div>
+</body>
+</html>
+            
+ 
+    

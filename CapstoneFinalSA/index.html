@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Trade+Winds&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="home" href="index.html">
+    <link rel="contact" href="../contact.html">
+    <link rel="welcome" href="../welcome.html"> 
+    <link rel="gallery" href="../gallery.html">
+    <link rel="missions" href="../faithmissions.html">
+    <link rel="missionaries" href="../missionaries.html">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    background: url(images/field.jpeg) no-repeat center center fixed;
+    -webkit-bacdground-size: cover;
+    width: 150%;
+    height: 150%;
+    overflow: scroll;
+}
+
+.parallax {
+    background-image: url(images/field.jpeg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-witdth: 2000px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.header {
+    border: none;
+    padding: none;
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    vertical-align: top;
+    padding-left: 10px;
+    margin-top: -110px;
+    margin-left: 400px;
+    width: 650px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #df8562;
+    font-family: font-family: 'Shadows Into Light', cursive;
+    border-radius: 30px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: 	#FAEBD7;
+    text-align: center;
+    padding: 8px 23px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #FAEBD7;
+    padding: 8px 23px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #6288df;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FAEBD7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #8B4513;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(202, 183, 157);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.aside {
+    display: inline-block;
+    justify-content: right;
+    margin-left: 200px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+    color: #09393A;
+}
+
+.aside style {
+    font-family: 'Shadows Into Light', cursive;
+    color: darkblue;
+}
+
+.border-box {
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: 	#8B4513;
+    font-size: 2em;
+}
+
+.section a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Lobster Two', cursive;
+    color: 	#8B4513;
+    font-size: 2em;
+}
+
+.nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    width: 10%;
+    height: 5%;
+    background-color: #D2B48C;
+    border-radius: 30px;
+    padding: 0px 5px 15px 7px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 800px;
+    margin-bottom: 20px;
+}
+
+.section {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lobster Two', cursive;
+    color: 	#8B4513;
+    margin-top: 30px;
+}
+
+.section-nav {
+    display: flex;
+    position: relative;
+    text-align: center;
+    background-color: #D2B48C;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    width: 20%;
+    border-radius: 30px;
+    padding: 10px 5px 8px 7px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+
+.section-nav > h1 {
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 20px;
+    padding-right: 80px;
+    margin-left: 40px;
+    font-family: 'Lobster Two', cursive;
+    color: #8B4513;  
+}
+
+.verse-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #D2B48C;
+    border-radius: 30px;
+    padding: 10px 5px 7px 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+}
+h3 {
+    display: inline-block;
+    text-align: center;
+    font-family 'Lobster Two', cursive;
+    font-size: 3em;
+    color: #09393A;
+    margin-bottom: 25px;
+    margin-top: 100px;
+    margin-left: 15%;
+} 
+
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 300px;
+    padding-left: 0px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1em;
+    color: #8B4513;    
+}
+
+h4 {
+    display: inline-block;
+    text-align: center;
+    font-family 'Lobster Two', cursive;
+    font-size: 2em;
+    color: #09393A;
+    margin-bottom: 100px;
+    margin-left: 100px;
+} 
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/CBClogo.png" style="width: 15%px top left"> 
+            <aside>
+                <div class="navbar">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="welcome.html">Welcome</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="gallery.html">Gallery</a>
+                            
+                    <div class="dropdown">
+                        <button class="dropbtn">Missions Program
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="faithmissions.html">Faith Missions</a>
+                            <a href="missionaries.html">Missionaries</a>
+                        </div>
+                    </div>
+                </div>
+                <h2>"The Church Where Folks Take Time To Be Friendly"</h2>
+            </aside>
+        </div>
+    </div>
+        <div class="title">
+            <h3><strong>Luke 2:10</strong></h3>
+        </div>
+            <div class="text">
+                <h4>Therefore said He unto them,
+                    The harvest truly is great,<br> but the labourers
+                    are few: <br>pray ye therefore the Lord of the
+                    harvest,<br> that He would send forth labourers
+                    into His harvest.
+                </h4>
+            </div>
+    <div class="section">
+            <div class="section-nav">
+                <h1><strong>Romans Road<br>Plan of Salvation</strong></h1>
+                <br>
+            </div>
+            <div class="verse-nav">
+               
+                    <h1 style="margin-left: 2%"> Romans 8:23 "..For all have sinned and come short of the glory of God."&nbsp;
+                    </h1>
+                    <h1 style="margin-left-center: 2%"> Romans 6:23 "..For the wages of sin is death, but the gift of God is eternal life through Jesus Christ our Lord."&nbsp;
+                    </h1>
+                    <h1 style="margin-center: 2%"> Romans 5:8 "..But God demonstrates His own love toward us, in that yet while we were still sinners, Christ died for us."&nbsp;
+                    </h1>
+                    <h1 style="margin-right-center: 2%">&nbsp;Romans 10:9 "..because if you confess with your mouth that Jesus is Lord and believe in your heart tht God raised you from the dead, you will be saved."&nbsp;
+                    </h1>
+                    <h1 style="margin-right: 2%"> Romans 5:1 "..Therefore since we have been justified through faith we have peace with God through out Lord and Savior Jesus Christ."&nbsp;
+                    </h1>
+                
+            </div>
+    
+</body>
+</html>

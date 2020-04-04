@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CapstoneFinal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/contact/.css">
+
+    <link rel="home" href="index.html">
+    <link rel="contact" href="../contact.html">
+    <link rel="welcome" href="../welcome.html">
+    <link rel="gallery" href="../gallery.html">
+    <link rel="missions" href="../faithmissions.html">
+    <link rel="missionaries" href="../missionaries.html">
+
+<style>
+ 
+* {
+    box-sizing: border-box;
+}
+body, html {
+    background: url(images/field.jpeg) no-repeat center center fixed;
+    -webkit-bacdground-size: cover;
+    width: 150%;
+    height: 150%;
+    overflow: scroll;
+}
+
+.parallax {
+    background-image: url(images/field.jpeg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-witdth: 2000px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    width: 1024px;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.header {
+  border: none;
+  padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    vertical-align: top;
+    padding-left: 10px;
+    margin-top: -120px;
+    margin-left: 400px;
+    text-align: center;
+    overflow: hidden;
+    width: 675px;
+    background-color: #df8562;
+    font-family: font-family: 'Shadows Into Light', cursive;
+    border-radius: 30px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: 	#FAEBD7;
+    text-align: center;
+    padding: 8px 23px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #FAEBD7;
+    padding: 8px 23px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #6288df;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FAEBD7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #8B4513;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(202, 183, 157);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h2 {
+    display: inline-flex;
+    text-align: center;
+    margin-left: 200px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    color: #fff;
+}
+.nav{
+    display: inline-block;
+    list-style-type: none;
+    justify-content: space-evenly;
+    max-width: 50%;
+    max-height: 1000px;
+    background-color:#8B4513;
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-left: 300px;
+    margin-right: 25px;
+    margin-top: 300px;
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    max-height: 800px;
+    margin-left: 25px;
+    margin-top: -40px;
+    padding-right: 10px;
+    padding-top: 10px;
+    list-style-type: none;
+    font-family: 'Lobster Two', cursive;
+    color: #09393A;
+    border-radius: 25px;
+}
+
+.column2 {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    max-height: 800px;
+    margin-right: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    list-style-type: none;
+    font-family: 'Lobster Two', cursive;
+    color: #09393A;
+    border-radius: 25px;
+}
+
+h1 {
+    display: inline-flex;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    color: #fff;
+    margin-left: 460px;
+}
+    
+h4 {
+    display: inline-flex;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+    color: #8B4513;
+    font-weight: bold;
+    margin-left: 200px;
+
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/CBClogo.png" style="width: 15%px top left"> 
+            <aside>
+                <div class="navbar">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="welcome.html">Welcome</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="gallery.html">Gallery</a>
+                            
+                    <div class="dropdown">
+                        <button class="dropbtn">Missions Program
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="faithmissions.html">Faith Missions</a>
+                            <a href="missionaries.html">Missionaries</a>
+                        </div>
+                    </div>
+                </div>
+                <h1>"The Great Commission"&nbsp;&nbsp;Matthew 28:19</h1>
+                <h2>"Go therefore and make disciples of all the nations,
+                    baptizing them in the name of the Father and of the
+                    Son and of the Holy Spirit."</h2>
+                    <h4>Missionaries supported by Calvary Baptist Church</h4>
+            </div>
+        </div>
+    </div>
+   
+    <div class="nav">
+        <div class="column1" style="background-color: #F4A460;">
+            <li>Friends of Israel</li>
+            <li>iMap/Affiliated</li>
+            <li>John Liles/Italy</li>
+            <li>Dennis Leavell/Belgium</li>
+            <li>Richard Hester/Australia</li>
+            <li>Larry Boggs/Guatemala</li>
+            <li>Edivaldo Cano/Brazil</li>
+            <li>Dan Bowels/Zambia</li>
+            <li>James Carter/Alaska</li>
+            <li>James Childress/Panama</li>
+            <li>Lomer Dela Cruz/Asia</li>
+            <li>Jerry Donovan/Canada</li>
+            <li>Tim Downs/Ivory Coast</li>
+            <li>John Franklin/Dominican Republic</li>
+            <li>Sever Gonciulea/Romainia</li>
+            <li>TJ Gritts/Spain</li>
+            <li>Mark Hale/Portugal</li>
+            <li>Max Harmon/Peru</li>
+            <li>Roy Hendrickson/England</li>
+            <li>William Hoving/England</li>
+            <li>Brandon Ivy/Philippines</li>
+            <li>Charles Joyce/Burkino Faso</li>
+            <li>Winston Kumar/Canada</li>
+            <li>Jimmy Lee/Mexico</li>
+            <li>Jonathan Liggett/Guatemala</li>
+            <li>Ken Liles/Canada</li>
+            <li>Greg Lyons/Philippines</li>
+            <br>
+        </div>
+    
+        <div class="column2" style="background-color: #F4A460;">
+            
+            <li>Clifford McGhee/Ecuador</li>
+            <li>Joe Mohler/Belgium</li>
+            <li>Chris Moore/Kenya/Real 4 Christ</li>
+            <li>Bruce O'Neal/MANNA</li>
+            <li>Gary Phelps/MANNA</li>
+            <li>Damian Pickett/England</li>
+            <li>Kevin Pine/England</li>
+            <li>Larry Quade/Wales</li>
+            <li>Michael Reap/Philippines</li>
+            <li>Jonathan Robertson/Costa Rica</li>
+            <li>Jaron Rogers/Nicaragua</li>
+            <li>Aldolfo Ruesga/Spain</li>
+            <li>Jonathan Saliba/Colombia</li>
+            <li>Melissa Sanders/Bolivia</li>
+            <li>Chriss Shirrell/TEAM Japan</li>
+            <li>Vernon Smith/Tanzania</li>
+            <li>Jonathan Steffy/Philippines</li>
+            <li>Larry Taylor/Belgium</li>
+            <li>Terry Unruh/Sri Lanka</li>
+            <li>Tom Wallace/Ireland</li>
+            <li>Brian Weed/BBFI/Trailhead</li>
+            <li>Jeff Williams/Canada</li>
+            <li>Robert Winters/French Polynesia</li>
+            <li>Steve Workman/Botswana</li>
+            <li>Brian Wright/Wales</li>
+            <li>Mike Wyatt/Japan</li>
+            <br>
+            <br>
+        </div>
+    </div>
+  
+</div>
+</body>
+</html>
+    

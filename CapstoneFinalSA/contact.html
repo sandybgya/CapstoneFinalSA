@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CapstoneFinal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scal=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   
+    <link rel="home" href="index.html">
+    <link rel="welcome" href="welcome.html">
+    <link rel="gallery" href="gallery.html">
+    <link rel="missions" href="faithmissions.html">
+    <link rel="missionaries" href="missionaries.html">
+    
+<style>
+body, html {
+    background: url(images/field.jpeg) no-repeat center center fixed;
+    -webkit-bacdground-size: cover;
+    width: 2000px;
+    height: 2000px;
+    overflow: scroll;
+}
+
+.parallax {
+    background-image: url(images/field.jpeg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-witdth: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    width: 1024px;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.header {
+    border: none;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    vertical-align: top;
+    padding-left: 5px;
+    margin-top: -110px;
+    margin-left: 400px;
+    text-align: center;
+    overflow: hidden;
+    width: 650px;
+    background-color: #df8562;
+    font-family: font-family: 'Shadows Into Light', cursive;
+    border-radius: 30px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: 	#FAEBD7;
+    text-align: center;
+    padding: 8px 23px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #FAEBD7;
+    padding: 8px 23px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #6288df;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FAEBD7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #8B4513;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(202, 183, 157);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    color: #09393A;
+    margin-left: -135px;
+}
+
+.section {
+    display: flex;
+    position: center;
+    margin-left: 5%;
+    margin-right: 25%;
+    margin-top: 50px;
+    width: 50%;
+    height: 25%;
+}
+
+.section iframe {
+    display: flex;
+    position: absolute;
+    margin-left: 2%;
+    margin-right: 25%;
+    margin-top: 60px;
+    width: 50%;
+    height: 25%;
+}
+
+.article {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 30px
+}
+
+.article h1 {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 75px;
+    font-family: 'Trade Winds', cursive;
+    color: #09393A;
+    font-size: 1.5em;
+}
+.fab {
+    padding: 20px;
+    font-size: 50px;
+    color: #09393A;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 325px;
+    margin-left: -400px;
+}
+
+.aside {
+    display: inline-block;
+    justify-content: right;
+    margin-left: 200px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: darkblue;
+}
+
+@media screen and (min-width: 1200px) {img.bg {
+    left: 50%;
+    margin-left: -512px;
+}
+} 
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/CBClogo.png" style="width: 15%px top left">
+            <aside>
+                <div class="navbar">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="welcome.html">Welcome</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="gallery.html">Gallery</a>
+                            
+                    <div class="dropdown">
+                        <button class="dropbtn">Missions Program
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="missionaries.html">Faith Missions</a>
+                            <a href="missionaries.html">Missionaries</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="section">
+        <div class="article">
+            <h1>
+                Pastor Rob Seale 
+                <br>
+                622 E Second Street
+                <br>
+                806.874.3156
+                <br>
+                <br>
+                Sunday School 10am
+                <br>
+                Sunday Morning 11am
+                <br>
+                Sunday Evening 6pm
+                <br>
+                Wednesday Bible Club 6:30pm
+                <br>
+                Wednesday Service 7pm
+                <br>
+                <a href="https://www.facebook.com/Calvary-Baptist-Church-100456388279744/?modal=admin_todo_tour"><i class="fab fa-facebook"></i>
+            </h1>
+            
+        </div>
+        <div class="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.8519753424794!2d-100.88461444920803!3d34.93524918027868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870093535b79f3bd%3A0x529918d55efcdab4!2sCalvary%20Baptist%20Church!5e0!3m2!1sen!2sus!4v1584388812563!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+  <div class="footer">
+        <h3 style="margin-left: 5em"><strong>Revelation 17:14</strong> These shall make war with the Lamb, and the Lamb shall overcome them:
+            for He is Lord of Lords, and King of Kings: and they that are with Him are called,
+            and chosen, and faithful.
+        </h3>
+    </div>
+
+</body>
+</html>
+    

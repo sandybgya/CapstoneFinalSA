@@ -1,0 +1,27 @@
+body {
+    background-image: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 1024px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+html {
+    background: gray;
+    -webkit-bacdground-size: cover;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {img.bg {
+    left: 50%;
+    margin-left: -512px;
+}
+}
+
+
+
